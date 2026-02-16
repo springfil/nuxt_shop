@@ -3,6 +3,10 @@
         <div>index page</div>
         <NuxtLink to="/about">About</NuxtLink>
         <button @click="openAbout">Переход</button>
+        <InputField
+            variant="gray"
+            placeholder="Введите ваш емейл для подписки"
+        />
     </div>
 </template>
 

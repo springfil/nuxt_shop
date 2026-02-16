@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { LayoutKey } from "#app";
 import "~/assets/styles/main.css";
 // const config = useAppConfig();
 // const runtime = useRuntimeConfig();
@@ -9,10 +10,11 @@ import "~/assets/styles/main.css";
 //     status: 300,
 //     statusText: "Custom Error",
 // });
+const name = ref<LayoutKey>("auth");
 </script>
 
 <template>
-    <div>
+    <NuxtLayout :name="name">
         <NuxtPage />
-    </div>
+    </NuxtLayout>
 </template>
