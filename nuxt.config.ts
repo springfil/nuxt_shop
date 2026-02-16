@@ -2,15 +2,15 @@
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: { enabled: true },
-    components: [
-        {
-            path: "~/components",
-            pathPrefix: false,
-        },
-        {
-            path: "~/widgets",
-        },
-    ],
+    // components: [
+    //     {
+    //         path: "~/components",
+    //         pathPrefix: false,
+    //     },
+    //     {
+    //         path: "~/widgets",
+    //     },
+    // ],
     modules: ["@nuxt/scripts", "@nuxt/image", "@nuxt/eslint", "@nuxt/fonts"],
     runtimeConfig: {
         public: {
