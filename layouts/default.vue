@@ -1,11 +1,11 @@
 <template>
     <div>
-        <div>Шапка</div>
+        <LayoutHeader />
         <slot />
-        <div>Подвал</div>
+        <LayoutFooter />
     </div>
 </template>
 
 <script lang="ts" setup></script>
 
-<style></style>
+<style scoped></style>

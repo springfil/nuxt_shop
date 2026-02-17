@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>index page</div>
+        index page
         <NuxtLink to="/about">About</NuxtLink>
         <button @click="openAbout">Переход</button>
         <InputField
@@ -16,4 +16,4 @@ const openAbout = () => {
 };
 </script>
 
-<style></style>
+<style scoped></style>

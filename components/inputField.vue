@@ -9,7 +9,7 @@ const { variant } = defineProps<{
 const data = defineModel<string>();
 </script>
 
-<style>
+<style scoped>
 .input {
     padding: 12px 0;
     background: none;

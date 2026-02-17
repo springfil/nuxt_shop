@@ -2,10 +2,6 @@
     <div>Login</div>
 </template>
 
-<script lang="ts" setup>
-definePageMeta({
-    layout: "auth",
-});
-</script>
+<script lang="ts" setup></script>
 
-<style></style>
+<style scoped></style>

@@ -1,7 +1,6 @@
 <template>
     <div>
-        <div>Auth</div>
-        <slot />
+        <Icon name="icons:logo" />
     </div>
 </template>
 

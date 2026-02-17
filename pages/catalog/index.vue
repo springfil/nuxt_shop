@@ -6,4 +6,4 @@
 console.log(useRoute().query.name);
 </script>
 
-<style></style>
+<style scoped></style>

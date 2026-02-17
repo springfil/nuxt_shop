@@ -13,4 +13,4 @@ const id = computed(() => {
 });
 </script>
 
-<style></style>
+<style scoped></style>
