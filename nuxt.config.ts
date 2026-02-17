@@ -11,7 +11,21 @@ export default defineNuxtConfig({
     //         path: "~/widgets",
     //     },
     // ],
-    modules: ["@nuxt/scripts", "@nuxt/image", "@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon"],
+    icon: {
+        customCollections: [
+            {
+                prefix: "icons",
+                dir: "./assets/icons",
+            },
+        ],
+    },
+    modules: [
+        "@nuxt/scripts",
+        "@nuxt/image",
+        "@nuxt/eslint",
+        "@nuxt/fonts",
+        "@nuxt/icon",
+    ],
     runtimeConfig: {
         public: {
             token: "",
