@@ -2,15 +2,35 @@
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: { enabled: true },
-    // components: [
-    //     {
-    //         path: "~/components",
-    //         pathPrefix: false,
-    //     },
-    //     {
-    //         path: "~/widgets",
-    //     },
-    // ],
+    routeRules: {
+        "/about": { prerender: true },
+    },
+    experimental: { appManifest: false },
+    runtimeConfig: {
+        public: {
+            token: "",
+            apiUrl: "",
+        },
+    },
+    postcss: {
+        plugins: {
+            "postcss-nested": {},
+        },
+    },
+    app: {
+        layoutTransition: {
+            name: "layout",
+            mode: "out-in",
+        },
+        head: {
+            link: [
+                {
+                    rel: "stylesheet",
+                    href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css",
+                },
+            ],
+        },
+    },
     icon: {
         customCollections: [
             {
@@ -26,10 +46,4 @@ export default defineNuxtConfig({
         "@nuxt/fonts",
         "@nuxt/icon",
     ],
-    runtimeConfig: {
-        public: {
-            token: "",
-            apiUrl: "",
-        },
-    },
 });
