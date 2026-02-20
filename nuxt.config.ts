@@ -7,9 +7,9 @@ export default defineNuxtConfig({
     },
     experimental: { appManifest: false },
     runtimeConfig: {
+        token: "",
         public: {
-            token: "",
-            apiUrl: "",
+            apiurl: "",
         },
     },
     postcss: {

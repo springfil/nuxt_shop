@@ -1,6 +1,7 @@
 export default defineAppConfig({
     apiPrefix: "/api",
     theme: {
-        mainColor: "#0c0c0c",
+        mainColor: "#000000",
     },
+    token: "1234567",
 });
