@@ -1,8 +1,7 @@
 <template>
-    <div class="header" @click="increment">
+    <div class="header">
         <NuxtLink to="/">
             <IconLogo />
-            {{ counter1 }}
         </NuxtLink>
         <div class="header__content">
             <div class="header__menu">
@@ -28,19 +27,11 @@
     </div>
 </template>
 
-<script lang="ts" setup>
-console.log("setup");
-
-const counter1 = ref(0);
-
-const increment = () => {
-    console.log("increment");
-    counter1.value++;
-};
-</script>
+<script lang="ts" setup></script>
 
 <style scoped>
 .header {
+    padding: 0 16px;
     margin: 0 auto;
     max-width: 1248px;
     display: flex;
