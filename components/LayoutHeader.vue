@@ -38,17 +38,17 @@
     justify-content: space-between;
     margin-top: 48px;
     border-bottom: 1px solid var(--color-gray);
+}
 
-    &__content {
-        display: flex;
-        align-items: center;
-        gap: 60px;
-    }
+.header__content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
 
-    &__menu {
-        display: flex;
-        gap: 60px;
-    }
+.header__menu {
+    display: flex;
+    gap: 60px;
 }
 
 .header__menu a {

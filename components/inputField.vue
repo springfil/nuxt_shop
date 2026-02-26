@@ -11,10 +11,13 @@ const data = defineModel<string>();
 
 <style scoped>
 .input {
+    width: 100%;
     padding: 12px 0;
     background: none;
     border: none;
     color: var(--color-black);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .input::placeholder {

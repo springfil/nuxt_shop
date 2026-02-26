@@ -13,11 +13,6 @@ export default defineNuxtConfig({
             imageurl: "",
         },
     },
-    postcss: {
-        plugins: {
-            "postcss-nested": {},
-        },
-    },
     app: {
         layoutTransition: {
             name: "layout",
