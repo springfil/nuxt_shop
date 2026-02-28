@@ -9,7 +9,11 @@
                         variant="gray"
                         placeholder="Поиск..."
                     />
-                    <Icon name="icons:search" size="18px" />
+                    <Icon
+                        name="icons:search"
+                        size="18px"
+                        @click="changeRoute"
+                    />
                 </div>
                 <SelectField
                     v-model="category_id"
