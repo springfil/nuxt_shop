@@ -36,6 +36,21 @@ import { useDebounceFn } from "@vueuse/core";
 import type { GetCategoryResponse } from "~/interfaces/categoty.interface";
 import type { GetProductsResponse } from "~/interfaces/product.interface";
 
+// useHead({
+//     title: Каталог товаров",
+//     meta: [
+//         {
+//             name: "description",
+//             content: "Каталог товаров ювелирных украшений",
+//         },
+//     ],
+// });
+
+useSeoMeta({
+    title: "Каталог товаров",
+    description: "Каталог товаров ювелирных украшений",
+});
+
 const API_URL = useAPI();
 const route = useRoute();
 const router = useRouter();

@@ -14,6 +14,11 @@
 const openAbout = () => {
     navigateTo({ path: "/about", query: { name: "John" } });
 };
+
+useSeoMeta({
+    title: "shoppe магазин",
+    description: "shoppe магазин ювелирных украшений",
+});
 </script>
 
 <style scoped></style>
