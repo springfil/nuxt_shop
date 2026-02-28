@@ -41,7 +41,7 @@ const login = async () => {
     });
     authStore.setToken(data.token);
     navigateTo("/account");
-    console.log(data);
+    // console.log(data);
 };
 </script>
 

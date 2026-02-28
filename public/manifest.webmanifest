@@ -1,0 +1,46 @@
+{
+  "name": "Shoppe магазин",
+  "short_name": "Shoppe",
+  "icons": [
+    {
+      "src": "/favicon-48x48.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-72x72.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-96x96.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-144x144.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-192x192.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-256x256.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-384x384.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png?v=c7fc04aa67cdbc0c3a353fd56758a94b",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
