@@ -1,7 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
-    devtools: { enabled: true },
+    devtools: {
+      enabled: true,
+
+      timeline: {
+        enabled: true,
+      },
+    },
     routeRules: {
         "/about": { prerender: true },
     },
@@ -20,6 +26,7 @@ export default defineNuxtConfig({
         },
         head: {
             title: "Магазин Shoppe",
+            titleTemplate: "%s | Shoppe",
             htmlAttrs: {
                 lang: "ru",
             },
@@ -45,12 +52,25 @@ export default defineNuxtConfig({
             },
         ],
     },
+    robots: {
+        disallow: ["/account"],
+    },
+    sitemap: {
+        sources: ["/api/sitemap/urls"],
+        defaults: {
+            lastmod: new Date().toISOString(),
+            priority: 0.5,
+            changefreq: "weekly",
+        },
+    },
     modules: [
         "@nuxt/scripts",
         "@nuxt/image",
         "@nuxt/eslint",
         "@nuxt/fonts",
         "@nuxt/icon",
+        "@nuxtjs/sitemap",
+        "@nuxtjs/robots",
         "@pinia/nuxt",
         "pinia-plugin-persistedstate/nuxt",
     ],

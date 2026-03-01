@@ -97,7 +97,7 @@ const categoriesSelect = computed(() => {
 const { data: productsData } = await useFetch<GetProductsResponse>(
     API_URL + "/products",
     {
-        key: "get=products",
+        key: "get-products",
         query,
     },
 );

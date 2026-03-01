@@ -16,8 +16,8 @@ const openAbout = () => {
 };
 
 useSeoMeta({
-    title: "shoppe магазин",
-    description: "shoppe магазин ювелирных украшений",
+    title: "Главная магазина",
+    description: "Главная магазина ювелирных украшений",
 });
 </script>
 
