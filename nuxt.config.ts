@@ -2,11 +2,11 @@
 export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: {
-      enabled: true,
-
-      timeline: {
         enabled: true,
-      },
+
+        timeline: {
+            enabled: true,
+        },
     },
     routeRules: {
         "/about": { prerender: true },
@@ -17,6 +17,14 @@ export default defineNuxtConfig({
         public: {
             apiurl: "",
             imageurl: "",
+        },
+    },
+    nitro: {
+        storage: {
+            db: {
+                driver: "fs-lite",
+                base: "./db",
+            },
         },
     },
     app: {

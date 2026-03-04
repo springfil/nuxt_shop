@@ -30,6 +30,7 @@ const API_URL = useAPI();
 const email = ref<string | undefined>();
 const password = ref<string | undefined>();
 const authStore = useAuthStore();
+const favouriteStore = useFavouritesStore();
 
 const login = async () => {
     const data = await $fetch<LoginResponse>(API_URL + "/auth/login", {
@@ -40,8 +41,9 @@ const login = async () => {
         },
     });
     authStore.setToken(data.token);
+    authStore.setEmail(data.user.email);
+    favouriteStore.restore(data.user.email);
     navigateTo("/account");
-    // console.log(data);
 };
 </script>
 
