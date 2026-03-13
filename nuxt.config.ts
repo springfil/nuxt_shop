@@ -3,10 +3,20 @@ export default defineNuxtConfig({
     compatibilityDate: "2025-07-15",
     devtools: {
         enabled: true,
-
         timeline: {
             enabled: true,
         },
+        customTabs: [
+            {
+                name: "nuxt-storybook",
+                title: "Storybook",
+                icon: "logos:storybook-icon",
+                view: {
+                    type: "iframe",
+                    src: "http://localhost:6006",
+                },
+            },
+        ],
     },
     routeRules: {
         "/about": { prerender: true },
@@ -71,6 +81,11 @@ export default defineNuxtConfig({
             changefreq: "weekly",
         },
     },
+    storybook: {
+        port: 6006,
+        route: "http://localhost:6006",
+        enabled: false,
+    },
     modules: [
         "@nuxt/scripts",
         "@nuxt/image",
@@ -81,5 +96,6 @@ export default defineNuxtConfig({
         "@nuxtjs/robots",
         "@pinia/nuxt",
         "pinia-plugin-persistedstate/nuxt",
+        "@nuxtjs/storybook",
     ],
 });

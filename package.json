@@ -7,7 +7,9 @@
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
-        "postinstall": "nuxt prepare"
+        "postinstall": "nuxt prepare",
+        "storybook": "storybook dev --port 6006",
+        "build-storybook": "storybook build"
     },
     "dependencies": {
         "@nuxt/eslint": "^1.15.1",
@@ -17,6 +19,7 @@
         "@nuxt/scripts": "^0.13.2",
         "@nuxtjs/robots": "^5.2.11",
         "@nuxtjs/sitemap": "^7.4.3",
+        "@nuxtjs/storybook": "^9.0.1",
         "@pinia/nuxt": "^0.11.1",
         "@vueuse/core": "^13.4.0",
         "eslint": "^10.0.0",
